@@ -1,0 +1,157 @@
+.row{
+  --bs-gutter-x:0 !important;
+}
+
+.infoLink{
+  background-color: #f4ff7a;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 4px;
+  padding: 4px 7px 4px 7px;
+  border: 1px solid #000;
+  border-radius: 24px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  max-width: 70px !important;
+  font-size: 14px;
+  line-height: 1.15;
+
+}
+.infoLink:hover{
+  background-color: #000;
+  color: #fff;
+
+}
+
+#submitBtn:hover{
+  background-color: transparent;
+  color: black;
+}
+/* --  Font for job title   -- */
+.companyTitle{
+  font-size: 24px;
+  color: #000;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+a {
+  color: #75848a;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+th {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+td{
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#wrapper{
+  margin:0 !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+  height: 100vh !important;
+
+}
+.hugeText{
+  font-size: 10vw;
+
+}
+
+.biggerFont{
+  font-size: 4vw;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/*-------------- Aktiv-Grotesk ---------------*/
+
+.lightFont{
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+.site{
+  display: flex;
+  max-height: 100vh !important;
+  max-width: 100vw !important;
+  flex-direction: column;
+  background-color: #ececec;
+  box-sizing: border-box;
+
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.active{
+  background-color: black;
+  color: white;
+  z-index:-1 ;
+}
+
+nav{
+  z-index: 1;
+  background-color: #ececec;
+
+}
+.fixed{
+  position: fixed;
+  top:46px;
+  left: 0;
+  z-index:1;
+  overflow: hidden;
+  height:100%;
+}
+
+
+.scroll{
+  margin-left: calc(100vw/3) !important;
+  top:50px !important;
+}
+
+.thumb {
+  max-width: 50px;
+  padding-bottom:5px;
+
+}
+
+#techText{
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bioText{
+  font-size: 0.8em;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+#headlineText {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-style: italic;
+}
+
+.diamond {
+  display:inline;
+  font-size: 1.5em;
+  margin-left: 0.5vw;
+  padding-right: 1.2vw;
+  line-height: 1vh;
+}

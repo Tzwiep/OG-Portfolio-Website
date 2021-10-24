@@ -1,0 +1,20 @@
+<!-- Success page - to let users know their contact submission form/email was successfully sent -->
+<div class="container text-center mx-auto m-5 p-5">
+    <h2 class="boldText p-5">Submission Received</h2>
+    <div class="mb-5">
+        <a href="/" class="link-warning p-5 mb-5">Click here if not automatically redirected.</a>
+        </br>
+    </div>
+</div>
+
+<!--This function is called on page load and waits 3 secs before returning the user to the index page -->
+<script>
+    document.onload = returnToHome();
+
+    function returnToHome() {
+        setTimeout(function () {
+            window.location.href = "/";
+        }, 3000);
+    }
+</script>
+

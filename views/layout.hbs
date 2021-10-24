@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="">
+<head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascripts/script.js"></script>
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/vzd4qeo.css">
+    <!-- aniView -->
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<!-------------------------- Body ------------------------------------->
+<body class="site">
+<div class="row" id="wrapper">
+    <!-- Sidebar -->
+    <div class="col-4 flex-shrink-0 bg-transparent border-end border-1 border-dark fixed">
+        <div class="row ps-3 pt-1">
+            <h1 class="pt-1 pb-1 lh-1 biggerFont">Tyler</br>Zwiep</h1>
+            <a href="mailto:tyler.zwiep@gmail.com" class="infoLink" >email</a>
+            <a href="https://github.com/Tzwiep" class="infoLink" target="_blank">github</a>
+            <div>
+                <p class="diamond">⬥︎</p><p class="diamond">⬥</p><p class="diamond">⬥</p><p class="diamond">⬥</p>
+                <p style="margin:2px 8px 2px 8px;" id="headlineText">Tyler is a developer based in Collingwood, Ontario.</p>
+
+            </div>
+            <div class="bioText">
+                <p style="padding:2px 8px 0px 8px;">
+                Combining design, photography, and digital media creation with computer programming and development –
+                    Tyler loves to create websites, GUIs, and user interfaces that are both aesthetically pleasing
+                    and technically proficient!</p>
+            </div>
+        </div>
+        <!-- Lower sidebar -->
+        <div class="row mt-3 p-1 border-top border-1 border-dark">
+            <img src="images/TZ.png" class="img-fluid pt-3">
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="col-8 bg-transparent px-3 scroll" style="margin-top:50px;">
+        <!-- link group -->
+        <div class="btn-group mx-auto mt-3 mb-5 w-100">
+
+            <a class="btn btn-outline-dark py-0 px-5 " id="navBtn" href="/">About Me</a>
+            <a class="btn btn-outline-dark py-0 px-5" id="navBtn" href="/projects">Projects</a>
+            <a class="btn btn-outline-dark py-0 px-5" id="navBtn" href="/contact">Contact</a>
+
+        </div>
+        {{{body}}}
+    </div>
+
+</div>
+<!-- Navbar -->
+<nav class="row w-100 navbar navbar-light position-fixed top-0 border-bottom border-1 border-dark">
+    <div class="container">
+        <h4 class="ms-auto mb-auto pe-3">TZ</h4>
+    </div>
+</nav>
+
+</body>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</html>
