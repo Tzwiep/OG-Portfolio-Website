@@ -44,8 +44,8 @@ app.use('/success', successRouter);
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASSWORD,
+    user: process.env.GMAIL_ACCOUNT,
+    pass: process.env.GMAIL_PASSWORD,
   },
 });
 // route defined for HTTP POST request
@@ -64,7 +64,7 @@ app.post("/send", (req, res) => {
     //  using my website's email address as the fixed recipient... and using a fixed subject line
     const mail = {
       sender: `${data.name} <${data.email}>`,
-      to: process.env.EMAIL,
+      to: process.env.GMAIL_ACCOUNT,
       subject: 'Contact Submission',
       text: `${data.name} <${data.email}> \n${data.message}`,
     };
