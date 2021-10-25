@@ -13,6 +13,7 @@ const multiparty = require("multiparty");
 var indexRouter = require('./routes/index');
 var projectsRouter = require('./routes/projects');
 var contactsRouter = require('./routes/contact');
+var successRouter = require('./routes/success');
 
 var app = express();
 
@@ -31,6 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/projects', projectsRouter);
 app.use('/contact', contactsRouter);
+app.use('/success', successRouter);
+
 
 /**
  *  Contact Form - Using Nodemailer
