@@ -59,7 +59,6 @@ app.post("/send", (req, res) => {
     Object.keys(fields).forEach(function (property) {
       data[property] = fields[property].toString();
     });
-    console.log(data);
     //  creating a mail object from the contact form fields -
     //  using my website's email address as the fixed recipient... and using a fixed subject line
     const mail = {
