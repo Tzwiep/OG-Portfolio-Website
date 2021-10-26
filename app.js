@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-require('dotenv').config();
 
 // required modules for sending an email from the contact form: nodemailer and multiparty
 const nodemailer = require("nodemailer");
