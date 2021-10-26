@@ -7,7 +7,6 @@ var logger = require('morgan');
 // required modules for sending an email from the contact form: nodemailer and multiparty
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
-const Dotenv = require('dotenv-webpack');
 
 
 var indexRouter = require('./routes/index');
