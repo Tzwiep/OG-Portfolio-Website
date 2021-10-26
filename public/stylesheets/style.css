@@ -22,13 +22,16 @@
 .infoLink:hover{
   background-color: #000;
   color: #fff;
-
 }
 
 #submitBtn:hover{
   background-color: transparent;
   color: black;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  box-shadow: -1px 1px #353535;
 }
+
 /* --  Font for job title   -- */
 .companyTitle{
   font-size: 24px;
