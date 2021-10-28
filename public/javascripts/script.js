@@ -14,9 +14,6 @@ $(function(){
 });
 
 $(function(){
-    $('#aniA').AniView({
-        animateClass: 'animate__animated'
-    });
     $('#aniB').AniView({
         animateClass: 'animate__animated',
         animateThreshold: 30

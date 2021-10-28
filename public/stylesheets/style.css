@@ -77,7 +77,10 @@ td{
   font-weight: 700;
   font-style: normal;
 }
-
+#navLinks{
+  width: 100%;
+  margin: auto;
+}
 
 
 
@@ -198,7 +201,10 @@ nav{
   }
 
   #navBtn{
-    font-size: 0.6em;
+    font-size: 0.5em;
+    max-width: 30vw;
+
+
   }
 
   .biggerFont{
@@ -207,6 +213,12 @@ nav{
     font-weight: 700;
     font-style: normal;
   }
+  #techText{
+    margin:0 !important;
+  }
+  .hugeText{
+    font-size: 16vw;
 
+  }
 
 } /* end of @media */

@@ -13,8 +13,6 @@
     <script type="text/javascript" src="javascripts/script.js"></script>
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/vzd4qeo.css">
-    <!-- aniView -->
-    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
     <!-- animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -41,8 +39,10 @@
         <!-- Lower sidebar -->
         <div class="row mt-3 p-1 border-top border-1 border-dark">
             <picture>
-                <source media="(min-width: 1500px)" srcset="images/TZ.png" class="img-fluid pt-3">
-                <img src="images/squareTZ.png" class="img-fluid pt-3">
+                <source media="(min-width: 1500px)" srcset="images/TZ.png">
+                <img src="images/projects/squareTZ-sm.png" style="max-width:100%"
+                     srcset="images/projects/squareTZ-sm.png 350w, images/squareTZ-md.png 750w, images/TZ.png 1000w"
+                     alt="Tyler Bio Photo">
             </picture>
         </div>
     </div>
@@ -50,7 +50,7 @@
     <!-- Body -->
     <div class="col-12 col-md-8 bg-transparent px-3 scroll">
         <!-- link group -->
-        <div class="btn-group mx-auto mt-3 mb-5 w-100" id="navLinks">
+        <div class="col-12 text-center btn-group mt-3 mb-5" id="navLinks">
             <a class="btn btn-outline-dark py-0 px-5 " id="navBtn" href="/">About Me</a>
             <a class="btn btn-outline-dark py-0 px-5" id="navBtn" href="/projects">Projects</a>
             <a class="btn btn-outline-dark py-0 px-5" id="navBtn" href="/contact">Contact</a>
@@ -72,5 +72,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
-
+<!-- aniView -->
+<script type="text/javascript" src="javascripts/jquery.aniview.js"></script>
 </html>
