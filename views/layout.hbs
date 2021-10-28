@@ -21,7 +21,7 @@
 <body class="site">
 <div class="row" id="wrapper">
     <!-- Sidebar -->
-    <div class="col-4 flex-shrink-0 bg-transparent border-end border-1 border-dark fixed">
+    <div class="col-12 col-md-4 flex-shrink-0 bg-transparent border-end border-1 border-dark fixed" id="sidebar">
         <div class="row ps-3 pt-1">
             <h1 class="pt-1 pb-1 lh-1 biggerFont">Tyler</br>Zwiep</h1>
             <a href="mailto:tyler.zwiep@gmail.com" class="infoLink" >email</a>
@@ -29,7 +29,6 @@
             <div>
                 <p class="diamond">⬥︎</p><p class="diamond">⬥</p><p class="diamond">⬥</p><p class="diamond">⬥</p>
                 <p style="margin:2px 8px 2px 8px;" id="headlineText">Tyler is a developer based in Collingwood, Ontario.</p>
-
             </div>
             <div class="bioText">
                 <p style="padding:2px 12px 0px 8px;">
@@ -40,19 +39,20 @@
         </div>
         <!-- Lower sidebar -->
         <div class="row mt-3 p-1 border-top border-1 border-dark">
-            <img src="images/TZ.png" class="img-fluid pt-3">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/TZ.png" class="img-fluid pt-3">
+                <img src="images/squareTZ.png" class="img-fluid pt-3">
+            </picture>
         </div>
     </div>
 
     <!-- Body -->
-    <div class="col-8 bg-transparent px-3 scroll" style="margin-top:50px;">
+    <div class="col-12 col-md-8 bg-transparent px-3 scroll">
         <!-- link group -->
-        <div class="btn-group mx-auto mt-3 mb-5 w-100">
-
+        <div class="btn-group mx-auto mt-3 mb-5 w-100" id="navLinks">
             <a class="btn btn-outline-dark py-0 px-5 " id="navBtn" href="/">About Me</a>
             <a class="btn btn-outline-dark py-0 px-5" id="navBtn" href="/projects">Projects</a>
             <a class="btn btn-outline-dark py-0 px-5" id="navBtn" href="/contact">Contact</a>
-
         </div>
         {{{body}}}
     </div>

@@ -79,6 +79,43 @@ td{
 }
 
 
+
+
+.thumb {
+  max-width: 50px;
+  padding-bottom:5px;
+
+}
+
+#techText{
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.bioText{
+  font-size: 0.9em;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+#headlineText {
+  padding-top: 0.5vh;
+  font-size: 0.9em;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.diamond {
+  display:inline;
+  font-size: 1.5em;
+  margin-left: 0.5vw;
+  padding-right: 1.2vw;
+  line-height: 1vh;
+}
+
 /*-------------- Aktiv-Grotesk ---------------*/
 
 .lightFont{
@@ -120,44 +157,55 @@ nav{
   overflow: hidden;
   height:100%;
 }
-
-
 .scroll{
   margin-left: calc(100vw/3) !important;
   top:50px !important;
+  margin-top: 50px !important;
 }
 
-.thumb {
-  max-width: 50px;
-  padding-bottom:5px;
+/* ------------------------------------------ Mobile Layout --------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .fixed{
+    position: relative;
+    top:auto;
+    left: inherit;
+    z-index: inherit;
+    overflow:inherit;
+    height:auto;
+  }
+  .scroll{
+    margin: auto !important;
+    top:0 !important;
+    margin-top: 0 !important;
+  }
 
-}
+  #wrapper{
+    margin:auto;
+    padding-left:inherit;
+    padding-right:inherit;
+    padding-bottom: 0px;
+    height: auto;
 
-#techText{
-  font-family: aktiv-grotesk, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
 
-.bioText{
-  font-size: 0.9em;
-  font-family: neue-haas-grotesk-text, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  }
+  #sidebar{
+    border: none !important;
+  }
 
-}
-#headlineText {
-  padding-top: 0.5vh;
-  font-size: 0.9em;
-  font-family: neue-haas-grotesk-text, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
+  nav{
+    display: none !important;
+  }
 
-.diamond {
-  display:inline;
-  font-size: 1.5em;
-  margin-left: 0.5vw;
-  padding-right: 1.2vw;
-  line-height: 1vh;
-}
+  #navBtn{
+    font-size: 0.6em;
+  }
+
+  .biggerFont{
+    font-size: 10vw;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+} /* end of @media */

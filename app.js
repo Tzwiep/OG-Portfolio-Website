@@ -8,6 +8,7 @@ var logger = require('morgan');
 // required modules for sending an email from the contact form: nodemailer and multiparty
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
+const sendgridTransport = require('nodemailer-sendgrid-transport');
 
 
 var indexRouter = require('./routes/index');
@@ -41,13 +42,11 @@ app.use('/success', successRouter);
  */
 // create transporter object using Nodemailer - a transporter is an object that can send emails
 // Nodemailer's createTransport() function connects to a SMTP (Simple Mail Transfer Protocol) server using my creds
-const transporter = nodemailer.createTransport({
-  service: "gmail",
+const transporter = nodemailer.createTransport(sendgridTransport({
   auth: {
-    user: process.env.GMAIL_ACCOUNT,
-    pass: process.env.GMAIL_PASSWORD,
-  },
-});
+    api_key: process.env.MAIL_API_KEY,
+  }
+}));
 // route defined for HTTP POST request
 app.post("/send", (req, res) => {
   // initialize variables for multiparty middeleware functions
@@ -62,10 +61,10 @@ app.post("/send", (req, res) => {
     //  creating a mail object from the contact form fields -
     //  using my website's email address as the fixed recipient... and using a fixed subject line
     const mail = {
-      sender: `${data.name} <${data.email}>`,
-      to: process.env.GMAIL_ACCOUNT,
+      sender: process.env.SENDER_EMAIL,
+      to: process.env.RECEIVER_MAIL,
       subject: 'Contact Submission',
-      text: `${data.name} <${data.email}> \n${data.message}`,
+      text: "From: "+ data.name + "\nEmail: "+ data.email + "\nMessage: " + data.message,
     };
     // use the transporter object and Nodemailer's sendMail() function to send the email (mail object)
     transporter.sendMail(mail, (err, info) => {
