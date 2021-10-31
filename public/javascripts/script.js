@@ -33,4 +33,7 @@ $(function(){
     $('#aniF').AniView({
         animateClass: 'animate__animated'
     });
+    $('#aniG').AniView({
+        animateClass: 'animate__animated'
+    });
 });
