@@ -9,7 +9,7 @@ var logger = require('morgan');
 const nodemailer = require("nodemailer");
 const multiparty = require("multiparty");
 const sendgridTransport = require('nodemailer-sendgrid-transport');
-
+const bodyParser = require("body-parser");
 
 var indexRouter = require('./routes/index');
 var projectsRouter = require('./routes/projects');
@@ -23,7 +23,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 
-
+app.use(bodyParser.urlencoded())
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
